@@ -1,0 +1,190 @@
+SPRING FRAMEWORK:
+
+The Spring Framework is an open-source framework for building enterprise applications in Java. It provides comprehensive infrastructure support, making it easier to develop robust and maintainable software. The framework simplifies the development of complex, large-scale applications by promoting good design practices and providing reusable code in the form of libraries.
+
+Key features and components of the Spring Framework include:
+
+INVERSION OF CONTROL (IOC):
+Spring promotes the IoC design principle, where the control flow of a program is inverted.
+Instead of the application code controlling the flow, the framework itself manages the flow of control.
+ This is achieved through dependency injection, where the objects (beans) are injected into the application rather than being created by the application.
+
+DEPENDENCY INJECTION (DI):
+Spring uses DI to manage the dependencies between different components in an application.
+This helps in creating loosely coupled components, making the application more modular and easier to maintain.
+
+ASPECT-ORIENTED PROGRAMMING (AOP):
+AOP is a programming paradigm that allows developers to modularize cross-cutting concerns, such as logging, transaction management, and security.
+Spring provides AOP support, enabling developers to separate concerns and improve code modularity.
+
+DATA ACCESS:
+Spring offers support for various data access technologies, including JDBC (Java Database Connectivity), ORM (Object-Relational Mapping) frameworks like Hibernate, and JPA (Java Persistence API).
+
+TRANSACTION MANAGEMENT:
+Spring simplifies transaction management in Java applications, providing a consistent programming model for handling transactions across different transactional resources like databases.
+
+MODEL-VIEW-CONTROLLER (MVC):
+Spring MVC is a web module within the Spring Framework that follows the MVC architectural pattern. It provides a robust framework for building web applications and RESTful services.
+
+SECURITY:
+Spring Security is a module that provides comprehensive security services for Java EE-based enterprise software applications.
+It covers authentication, authorization, and protection against common security vulnerabilities.
+
+CONTAINER:
+The Spring container is responsible for managing the lifecycle of Spring beans.
+It is also known as the IoC container and provides various services, such as dependency injection and bean lifecycle management.
+
+INTEGRATION:
+Spring supports integration with other frameworks and technologies, making it suitable for use in diverse enterprise environments.
+It integrates with technologies like Java EE, JMS (Java Message Service), JMX (Java Management Extensions), and more.
+
+The Spring Framework is widely used in enterprise application development due to its flexibility, modularity, and ability to simplify the development of complex systems.
+It is a popular choice for building scalable and maintainable Java applications.
+
+WHAT IS SPRING BEAN ?
+
+Spring bean is an object that is managed by the Spring IoC (Inversion of Control) container.
+The Spring container is responsible for instantiating, configuring, and managing these beans throughout their lifecycle.
+
+What is concurrent HashMap And HashTable?
+
+
+WHAT IS THREAD SAFE  ?
+
+When a thread is already working on an object and preventing another thread on working on the same object, this process is called Thread-Safety.
+
+WHAT IS THROW AND THROWS ?
+
+The 'throw' keyword is used to explicitly throw an exception from within a block of code or a method.
+The 'throws' keyword is used in the method signature to declare the exceptions that a method can potentially throw.
+
+THREAD SAFETY AND HOW TO ACHIEVE IT IN JAVA:
+
+As we know Java has a feature, Multithreading, which is a process of running multiple threads simultaneously.
+ When multiple threads are working on the same data, and the value of our data is changing, that scenario is not thread-safe and we will get inconsistent results.
+ When a thread is already working on an object and preventing another thread on working on the same object, this process is called Thread-Safety.
+
+ HOW TO ACHIEVE THREAD SAFETY
+There are four ways to achieve Thread Safety in Java. These are:
+
+Using Synchronization.
+Using Volatile Keyword.
+Using Atomic Variable.
+Using Final Keyword.
+
+USING SYNCHRONIZATION:
+
+Synchronization is the process of allowing only one thread at a time to complete the particular task.
+It means when multiple threads executing simultaneously, and want to access the same resource at the same time, then the problem of inconsistency will occur.
+so synchronization is used to resolve inconsistency problem by allowing only one thread at a time.
+Synchronization uses a synchronized keyword. Synchronized is the modifier that creates a block of code known as a critical section.
+
+Note: Example is there in intellij Idea using Synchronizing -Naresh-java-workspace/Java-coding-practice.
+
+WHAT IS SYNCHRONIZATION AND ASYNCHRONIZATION IN JAVA ?
+
+Asynchronous is a non-blocking architecture, so the execution of one task isn't dependent on another.
+Tasks can run simultaneously. Synchronous is a blocking architecture, so the execution of each operation depends on completing the one before it.
+Each task requires an answer before moving on to the next iteration.
+
+COLLECTIONS FRAMEWORK:
+List:
+1.List is a interface which extends from collection interface.
+2.In list we can store elements in seqential order.
+3.List allow duplicate elements.
+4.In list, elements are maintanied by index positions because it uses index based structure.
+5.While we retriving the elements insertion order is maintanied.
+6.It allows for storing many null elements.
+7.List interface in java has four concrete subclasses.
+ They are ArrayList, LinkedList, Vector, and Stack.
+ These four subclasses implements the list interface.
+
+ArrayList:
+1.ArrayList is a class which implements from List Interface.
+2.ArrayList can store elements in index based structure.
+3.Arraylist maintained insertion order.
+4.An ArrayList is a resizable array that can grow or shrink in the memory whenever needed.
+5.ArrayList class is present in the java.util package and is commonly used for storing and manipulating collections of objects in an arbitrary order.
+6.ArrayList is not synchronized. That means multiple threads can use the same ArrayList objects simultaneously.
+
+WHAT IS ITERATOR IN JAVA ?
+
+1. Iterator in java is a special type of object that provides seqential access to the elements of collection object.
+2.An Iterator object implements Iterator interface which is present in java.util.Iterator package.
+3.By using Iterator, we can perform both read and remove operations.
+
+WHAT IS ITERABLE INTERFACE IN JAVA ?
+1.The Collection interface extends Iterable interface that is present at the top of the collection hierarchy.
+2.The iterable interface is present in java.lang.Iterable package.
+3.It provides a uniform way to retrieve the elements one by one from a collection object.
+
+DRAWBACKS OF ITERATOR ?
+1.By using Iterator, we can move only towards forwarding direction.
+We cannot move in the backward direction. Hence, these are called single-direction cursors.
+2.We can perform either read operation or remove operation.
+3.We cannot perform the replacement of new objects.
+4.For example, suppose there are five mangoes in a box.
+ Out of five, two mangoes are not good but we cannot replace those damaged mangos with new mangos.
+  To overcome the above drawbacks, we should use the ListIterator concept.
+
+WHAT IS LISTOPERATOR IN JAVA ?
+1.ListIterator is an interface (an extension of Iterator interface) in Java that is used to retrieve elements from a collection object in both forward and reverse directions.
+2.By using ListIterator, we can perform different kinds of operations such as read, remove, replacement (current object), and the addition of new elements from a list while iterating.
+
+WHAT IS RUNNABLE INTERFACE ?
+1. Runnable interface is a interface.
+2.The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread.
+3.The class must define a method of no arguments called run.
+
+WHAT IS CALLABLE INTERFACE ?
+1.Callable Interface is a Interface.
+2.Callable is interface is provided by the java.util.concurrentpackage.
+3.Callable Interface in java is used to make class instance run as a thread by implementing it.
+4.Callable interface can return any object as result and can throw an exception.
+
+WHAT IS MARKER INTERFACE ?
+1.An interface that does not contain methods, fields, and constants is known as marker interface.
+2.In other words, an empty interface is known as marker interface or tag interface.
+3.It delivers the run-time type information about an object.
+4.It is the reason that the JVM and compiler have additional information about an object.
+5.The Serializable and Cloneable interfaces are the example of marker interface.
+
+WHAT IS ClONEABLE INTERFACE ?
+1.Cloneable interface in Java is a marker interface that is used to indicate that a class can be cloned.
+2.It is an empty interface that does not contain any methods to implement.
+3.By convention, a class that implements the Cloneable interface is expected to override the Object.
+
+WHAT IS SERILIZABLE INTERFACE ?
+1.It is a marker interface in Java that is defined in the java.io package.
+2.If we want to make the class serializable, we must implement the Serializable interface.
+3.If a class implements the Serializable interface, we can serialize or deserialize the state of an object of that class.
+
+WHAT IS SERILIZATION AND DESERILIZATION ?
+SERILIZATION:
+1.Serialization (converting object into byte stream ) is mechanisam in which object state is read from the memory and written into a file or database.
+
+DESERIALIZATION:
+2. Deserialization (converting byte stream into object ) is opposite of serialization means object state reading from the file or database and written
+   back to the memory.
+
+WHAT IS COMPARATOR INTERFACE ?
+1.Comparator is a interface in java
+2. Comparator interface is used to sorting the objects of user defined class.
+3.It provides multiple sorting sequences, i.e., you can sort the elements on the basis of any data member, for example, rollno, name, age or anything else.
+4.This interface is found in java.util package and contains 2 methods compare(Object obj1,Object obj2) and equals(Object element).
+
+WHAT IS COMPARABLE INTERFACE ?
+1. Comaparable is a interface.
+2. Comparable interface is used to order the objects of user-defined class.
+3. This interface is found in java.lang package.
+4. And it contains only one method i.e, compareTo(Object)
+5.It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only.
+For example, it may be rollno, name, age or anything else.
+
+
+
+
+
+
+
+
