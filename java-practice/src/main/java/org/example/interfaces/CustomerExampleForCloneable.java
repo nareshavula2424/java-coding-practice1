@@ -1,9 +1,9 @@
 package org.example.interfaces;
 /* We are learning the cloneable interface */
-public class Customer implements Cloneable{
+public class CustomerExampleForCloneable implements Cloneable{
     int a;
 
-    Customer(int a){
+    CustomerExampleForCloneable(int a){
         this.a = a;
 
     }

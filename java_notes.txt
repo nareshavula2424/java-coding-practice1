@@ -107,6 +107,24 @@ ArrayList:
 5.ArrayList class is present in the java.util package and is commonly used for storing and manipulating collections of objects in an arbitrary order.
 6.ArrayList is not synchronized. That means multiple threads can use the same ArrayList objects simultaneously.
 
+How the ArrayList works
+1.The ArrayList class has a regular array inside it.
+2.When an element is added, it is placed into the array.
+3.If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed.
+
+LinkedList:
+1.LinkedList is a class in collections and which implements from List Interface.
+2.In LinkedList we can perform add,remove and change the elements.
+3.LinkedList was not maintain insertion order because it built in differently.
+
+How the LinkedList works
+1.The LinkedList stores its items in "containers."
+2.The list has a link to the first container and each container has a link to the next container in the list.
+3.To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
+
+When To Use ArrayList And LinkedList:
+Use an ArrayList for storing and accessing data, and LinkedList to manipulate data.
+
 WHAT IS ITERATOR IN JAVA ?
 
 1. Iterator in java is a special type of object that provides seqential access to the elements of collection object.
@@ -181,7 +199,36 @@ WHAT IS COMPARABLE INTERFACE ?
 5.It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only.
 For example, it may be rollno, name, age or anything else.
 
-WHAT IS EQUALS() AND HASHCODE() METHODS IN JAVA ?
+WHAT IS equals() AND hashcode() METHODS IN JAVA ?
+1.Java.lang.object class has two very important methods defined:
+   public boolean equals(Object obj)
+    and public int hashCode()
+
+equals() method:
+1.In java equals() method is used to compare equality of two Objects. The equality can be compared in two ways:
+a)Shallow comparison:
+ The default implementation of equals method is defined in Java.lang.Object class which simply checks if two Object references (say x and y) refer to the same Object.
+ i.e. It checks if x == y. Since Object class has no data members that define its state, it is also known as shallow comparison.
+b)Deep Comparison:
+Suppose a class provides its own implementation of equals() method in order to compare the Objects of that class w.r.t state of the Objects.
+That means data members (i.e. fields) of Objects are to be compared with one another.
+ Such Comparison based on data members is known as deep comparison.
+
+syntax:
+public boolean equals  (Object obj)
+
+hascode() method:
+It returns the hashcode value as an Integer.
+Hashcode value is mostly used in hashing based collections like HashMap, HashSet, HashTable….etc.
+This method must be overridden in every class which overrides equals() method.
+Syntax :
+public int hashCode()
+
+The general contract of hashCode is:
+1.If two Objects are equal, according to the equals(Object) method, then hashCode() method must produce the same Integer on each of the two Objects.
+2.If two Objects are unequal, according to the equals(Object) method, It is not necessary the Integer value produced by hashCode() method on each of the two Objects will be distinct.
+    It can be same but producing the distinct Integer on each of the two Objects is better for improving the performance of hashing based Collections like HashMap, HashTable…etc.
+Note: Equal objects must produce the same hash code as long as they are equal, however unequal objects need not produce distinct hash codes.
 
 
 
