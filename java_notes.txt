@@ -181,6 +181,8 @@ WHAT IS COMPARABLE INTERFACE ?
 5.It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only.
 For example, it may be rollno, name, age or anything else.
 
+WHAT IS EQUALS() AND HASHCODE() METHODS IN JAVA ?
+
 
 
 
