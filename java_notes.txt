@@ -149,6 +149,18 @@ WHAT IS LISTOPERATOR IN JAVA ?
 1.ListIterator is an interface (an extension of Iterator interface) in Java that is used to retrieve elements from a collection object in both forward and reverse directions.
 2.By using ListIterator, we can perform different kinds of operations such as read, remove, replacement (current object), and the addition of new elements from a list while iterating.
 
+SET INTERFACE COLLECTIONS:
+1.Set is a interface in collection framework.
+2.Set interface implements the HashSet,LinkedHashSet,TreeSet classes.
+3.Set is an unordered collection of elements.
+  That means the order is not maintained while storing elements.
+    While retrieving we may not get the same order as that we put elements.
+4.It is used to store a collection of elements without duplicate. That means it contains only unique elements.
+5.Java Set uses map based structure for its implementation.
+6.It can be iterated by using Iterator but cannot be iterated by using ListIterator.
+7.Most of the set implementations allow adding only one null element. Tree set does not allow to add null element.
+8.It does not provide any get method like a list.
+
 WHAT IS RUNNABLE INTERFACE ?
 1. Runnable interface is a interface.
 2.The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread.
